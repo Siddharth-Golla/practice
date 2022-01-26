@@ -203,6 +203,7 @@ def factors(n):         # generator that computes factors
 
 def norm(v: list, p=2) -> float:
     assert len(v) >= 2, "v should contain atleast 2 positive numbers"
+    assert len(v) == p, "Dimensions should match the number of coordinates"
     result = 0
     for i in range(0, p):
         result += v[i]**p
