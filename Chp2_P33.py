@@ -1,7 +1,7 @@
 # P-2.33) Write a Python program that inputs a polynomial in standard algebraic
 #   notation and outputs the first derivative of that polynomial.
 
-# ax**2 + bx + c
+# SOLUTION: This exercise can be solved by using functions, but i have used classes since it is a OOP chapter
 
 #
 class Polynomial:
@@ -41,8 +41,13 @@ class Polynomial:
 
         return result.lstrip("+")                   # Remove the leading '+'
 
-    def first_derivative():
-        pass
+    def derivative(self):
+        derived_coeffs = []
+        exponent = len(self._coefficients) - 1
+        for i in range(len(self._coefficients)-1):
+            derived_coeffs.append(self._coefficients[i] * exponent)
+            exponent -= 1
+        return Polynomial(*derived_coeffs)
 
 
 if __name__ == '__main__':
@@ -55,4 +60,6 @@ if __name__ == '__main__':
     print(p1)
     print(p2)
     print(p3)
-    print(str(p4))
+    x = p3.derivative()
+    print("Derivative of ", p3, "is ", x)
+    print(f"The derivative of {p5} is: ", p5.derivative())
