@@ -1,4 +1,3 @@
-from cmath import sqrt
 from random import randint
 from typing import Sequence
 from array import array

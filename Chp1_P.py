@@ -8,10 +8,6 @@
 #   input and write out the number of times one must repeatedly divide this
 #   number by 2 before getting a value less than 2.
 
-import re
-from traceback import print_tb
-
-
 num = 128
 count = 0
 while num // 2 >= 2:
