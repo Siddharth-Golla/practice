@@ -1,12 +1,14 @@
-# P-29) Write a Python program that outputs all possible strings formed by using
-#   the characters c , a , t , d , o , and g exactly once.
+"""
+P-29) Write a Python program that outputs all possible strings formed by using
+  the characters c , a , t , d , o , and g exactly once.
 
-#   Solve later using recursion
+  Solve later using recursion
 
 
-# P-30) Write a Python program that can take a positive integer greater than 2 as
-#   input and write out the number of times one must repeatedly divide this
-#   number by 2 before getting a value less than 2.
+P-30) Write a Python program that can take a positive integer greater than 2 as
+  input and write out the number of times one must repeatedly divide this
+  number by 2 before getting a value less than 2.
+"""
 
 num = 128
 count = 0
@@ -15,12 +17,14 @@ while num // 2 >= 2:
     count += 1
 
 
-# P-31) Write a Python program that can “make change.” Your program should take two numbers as input,
-#   one that is a monetary amount charged and the other that is a monetary amount given.
-#   It should then return the number of each kind of bill and coin to give back as change for the difference between
-#   the amount given and the amount charged. The values assigned to the bills and
-#   coins can be based on the monetary system of any current or former government.
-#   Try to design your program so that it returns as few bills and coins as possible
+"""
+P-31) Write a Python program that can “make change.” Your program should take two numbers as input,
+  one that is a monetary amount charged and the other that is a monetary amount given.
+  It should then return the number of each kind of bill and coin to give back as change for the difference between
+  the amount given and the amount charged. The values assigned to the bills and
+  coins can be based on the monetary system of any current or former government.
+  Try to design your program so that it returns as few bills and coins as possible.
+"""
 
 def make_change(amount_charged: int, amount_given: int):
     difference = amount_given - amount_charged
@@ -80,9 +84,11 @@ def make_change(amount_charged: int, amount_given: int):
 
 make_change(1, 2000)
 
-# P-31) Write a Python program that can simulate a simple calculator, using the console as the exclusive input and output device.
-#   That is, each input to the calculator, be it a number, like 12.34 or 1034, or an operator, like + or =, can be done on a separate line.
-#   After each such input, you should output to the Python console what would be displayed on your calculator.
+"""
+P-31) Write a Python program that can simulate a simple calculator, using the console as the exclusive input and output device.
+  That is, each input to the calculator, be it a number, like 12.34 or 1034, or an operator, like + or =, can be done on a separate line.
+  After each such input, you should output to the Python console what would be displayed on your calculator.
+"""
 
 
 result = 0
