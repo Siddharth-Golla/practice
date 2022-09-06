@@ -120,7 +120,7 @@ list2 = []
 try:
     list2[3] = 10
 except IndexError:
-    print("Don’t try buffer overflow attacks in Python!")
+    print("Don't try buffer overflow attacks in Python!")
 
 
 # C-1.24) Write a short Python function that counts the number of vowels in a given character string.
