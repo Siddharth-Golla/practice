@@ -8,10 +8,10 @@ high the box should be. [Hint: print('*'*10) prints ten asterisks.]
 ************
 
 """
-# box_height = int(input("Enter the height of the box: "))
-# box_width = int(input("Enter the width of the box: "))
-# for i in range(box_height):
-#     print("*" * box_width)
+box_height = int(input("Enter the height of the box: "))
+box_width = int(input("Enter the width of the box: "))
+for i in range(box_height):
+    print("*" * box_width)
 
 
 """
@@ -24,12 +24,12 @@ high the box should be.
 *******************
 
 """
-# b_box_h = int(input("Enter the height of the border box: "))
-# b_box_w = int(input("Enter the width of the border box: "))
-# print("*" * b_box_w)
-# for _ in range(b_box_h - 2):
-#     print("*"," " * (b_box_w - 2),"*", sep="")
-# print("*" * b_box_w)
+b_box_h = int(input("Enter the height of the border box: "))
+b_box_w = int(input("Enter the width of the border box: "))
+print("*" * b_box_w)
+for _ in range(b_box_h - 2):
+    print("*"," " * (b_box_w - 2),"*", sep="")
+print("*" * b_box_w)
 
 
 """
@@ -43,9 +43,9 @@ triangle should be.
 *****
 
 """
-# tri_height1 = int(input("Enter the height of the triangle: "))
-# for i in range(1, tri_height1 + 1):
-#     print("*" * i)
+tri_height1 = int(input("Enter the height of the triangle: "))
+for i in range(1, tri_height1 + 1):
+    print("*" * i)
 
 
 """

@@ -22,9 +22,9 @@ else:
 number.
 """
 
-num = int(input("Enter a number: "))
+num = 10 #int(input("Enter a number: "))
 print(f"The divisors of {num} are", end=" ")
-for divisor in range(1, num):
+for divisor in range(1, num + 1):
     if num % divisor == 0:
         print(divisor, end=" ")
 
