@@ -1,1 +1,0 @@
-Function fact was called at 28/09/2022 17:02:03

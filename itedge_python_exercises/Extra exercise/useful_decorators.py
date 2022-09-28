@@ -23,8 +23,8 @@ def log_function(func):
         current_time = now.strftime("%d/%m/%Y %H:%M:%S")
         with open('logfunction.txt', 'a+') as file:
             func_name = func.__name__
-            print(f"Function {func_name} was called at {current_time}\n")
-            file.write(f"Function {func_name} was called at {current_time}\n")
+            print(f"Function: {func_name} was called at {current_time}\n")
+            file.write(f"Function: {func_name} was called at {current_time}\n")
         return return_value
 
     return wrapper_log_function
