@@ -119,14 +119,14 @@ def main():
     connection = create_connection("social_media.db")
 
     #Table creation
-    print("-----Creating Table-----")
+    print("------------Creating Table------------")
     execute_query(connection, create_users_table)
     execute_query(connection, create_posts_table)
     execute_query(connection, create_comments_table)  
     execute_query(connection, create_likes_table)
 
     # Insert Records
-    print("-----Inserting Records----")
+    print("------------Inserting Records------------")
     execute_query(connection, create_users)
     execute_query(connection, create_posts)
     execute_query(connection, create_comments)
@@ -134,7 +134,7 @@ def main():
 
 
     # Selecting and displaying records
-    print("----Displaying all records-----")
+    print("------------Displaying all records------------")
     users = execute_read_query(connection, select_users)
     for user in users:
         print(user)
@@ -151,28 +151,28 @@ def main():
     
 
     # Updating record
-    print("-----Posts before Updating----")
+    print("------------Posts before Updating------------")
     posts = execute_read_query(connection, select_posts)
     for post in posts:
         print(post)
 
     execute_query(connection, update_post_description)
 
-    print("-----Posts after Updating")
+    print("------------Posts after Updating------------")
     posts = execute_read_query(connection, select_posts)
     for post in posts:
         print(post)
 
     
     #Deleting Records
-    print("-----Comments before Deleting----")
+    print("------------Comments before Deleting------------")
     comments = execute_read_query(connection, select_comments)
     for comment in comments:
         print(comment)
 
     execute_query(connection, delete_comment)
 
-    print("-----Comments after Deleting----")
+    print("------------Comments after Deleting------------")
     comments = execute_read_query(connection, select_comments)
     for comment in comments:
         print(comment)
